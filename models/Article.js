@@ -9,9 +9,9 @@ var ArticleSchema = new Schema({
 		type: String,
 		required: true
 	},
-	description: {
+	summary: {
 		type: String,
-		required: false
+		required: true
 	},
 	note: {
 		type: Schema.Types.ObjectId,
@@ -19,5 +19,5 @@ var ArticleSchema = new Schema({
 	}
 });
 
-var Article = mongoose.model("Article", ArticleSchema);
-module.exports = Article;
+var nytArticle = mongoose.model("nytArticle", ArticleSchema);
+module.exports = nytArticle;
