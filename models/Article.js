@@ -9,15 +9,15 @@ var ArticleSchema = new Schema({
 		type: String,
 		required: true
 	},
-	summary: {
-		type: String,
-		required: true
-	},
+	// summary: {
+	// 	type: String,
+	// 	required: true
+	// },
 	note: {
 		type: Schema.Types.ObjectId,
 		ref: "Note"	
 	}
 });
 
-var nytArticle = mongoose.model("nytArticle", ArticleSchema);
-module.exports = nytArticle;
+var Article = mongoose.model("Article", ArticleSchema);
+module.exports = Article;

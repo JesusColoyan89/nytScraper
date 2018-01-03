@@ -1,60 +1,49 @@
 <!DOCTYPE html>
-<html>
-<head>
-
-	<title>
-		NYT SCRAPER
-	</title>
-	<link rel="stylesheet" type ="text/css" href="style.css">
-	<link rel="style" type ="javascript" href="style.js"
-
-	<!-- *********FONT STYLE********** -->
-	<link href="https://fonts.googleapis.com/css?family=Cutive+Mono" rel="stylesheet">
-	<!-- ***************************** -->
-
-	 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
-</head>
-<body> 
-	
-      <header>
-  <nav>
-    <span class="movetext">New York Times Headlines</span>
+<html lang="en-us">
+  <head>
+    <meta charset="UTF-8">
+    <title>Reddit Scraper</title>
+    <style>
+      body { background-color: #F2F6D0 }
+      #wrapper {
+        width: 960px;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 5%;
+      }
+      #articles {
+        display: inline-block;
+        overflow: auto;
+        width: 60%;
+        height: 700px;
+      }
+      #notes {
+        float: right;
+        width: 30%;
+      }
+      textarea, input {
+        display: block;
+        width: 100%;
+        background-color: #FCF5C7;
+      }
+      input {
+        height: 36px;
+        font-size: 24px;
+      }
+      textarea {
+        height: 200px;
+        font-size: 18px;
+      }
+    </style>
+  </head>
+  <body>
+    <div id="wrapper">
+      <h1>Reddit Scraper</h1>
    
-    <a href="#portion1" class="active">Info</a>
-    <a href="#portion2">Headlines</a>
-  </nav>
-</header>
-
-<div class="portion">
-  <h2>New York Times Headlines</h2>
-</div>
-
-<div id="nytArticles">
-  <h3>Headlines</h3>
-  
-  <div class="button">
-    <a href="#">Example Button</a>
-  </div>
-</div>
-
-
-
-<div id="Notes" >
-  <h3>Notes</h3>
-  
-  <div class="button">
-    <a href="#">Example Button</a>
-  </div>
-</div>
-
-
-<footer class="info">
-  <div id="toTop"><a href="#"></a></div>
-  <p>&copy; 2017 Jesus Coloyan</p>
-  
-</footer>
-
-
-
-</body>
+      <div id="articles"></div>
+      <div id="notes"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="app.js"></script>
+  </body>
 </html>
